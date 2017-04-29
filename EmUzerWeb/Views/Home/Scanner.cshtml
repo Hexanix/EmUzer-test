@@ -1,0 +1,16 @@
+﻿@using System;
+@using EmUzerWeb.Models;
+
+@{
+    ViewBag.Title = "Scanner";
+}
+
+@model SpotifyAccount
+
+@{ 
+    foreach(var item in Model.outputPlaylst)
+    {
+        string show = item.Name;
+        Html.DisplayText("show");
+    }
+}
